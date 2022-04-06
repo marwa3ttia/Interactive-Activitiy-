@@ -85,7 +85,7 @@ arr.forEach((ele) => {
         correct_audio.play();
         ele.innerHTML =
           answer +
-          '<img src="https://educationalrc.org/tasks/4/assets/images/tikMark-small.png" width="30px" height="30px">';
+          '<img src="https://educationalrc.org/tasks/4/assets/images/tikMark-small.png" width="25px" height="25px">';
         answer = "";
         answer_list.forEach((item) => {
           document.getElementsByClassName("selected")[0].style.visibility =
@@ -109,7 +109,7 @@ arr.forEach((ele) => {
         incorrect_audio.play();
         ele.innerHTML =
           answer +
-          '<img src="https://educationalrc.org/tasks/4/assets/images/crossMark-small.png" width="30px" height="30px">';
+          '<img src="https://educationalrc.org/tasks/4/assets/images/crossMark-small.png" width="25px" height="25px">';
         const myTimeout = setTimeout(function () {
           ele.innerHTML = "";
         }, 1000);
@@ -128,7 +128,7 @@ view__butt.onclick = function () {
   for (let j = 0; j < 5; j++) {
     arr[j].innerHTML =
       correct__answer[j] +
-      '<img src="https://educationalrc.org/tasks/4/assets/images/tikMark-small.png" width="30px" height="30px">';
+      '<img src="https://educationalrc.org/tasks/4/assets/images/tikMark-small.png" width="25px" height="25px">';
   }
   view_arr_correct.forEach((ele) => {
     ele.style.visibility = "hidden";
@@ -219,7 +219,6 @@ let create__popup__withoutimg = function () {
   closebutton.appendChild(ex);
   closebutton.className = "ex-span";
   popupbox.appendChild(closebutton);
-
   // create img
   var popuph3 = document.createElement("h3");
   popuph3.innerHTML = "Help content goes here.";
